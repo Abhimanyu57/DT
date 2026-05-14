@@ -179,5 +179,13 @@ webrtc_streamer(
         "video": True,
         "audio": False
     },
-    async_processing=True
+    rtc_configuration={
+        "iceServers": [
+            {
+                "urls": [
+                    "stun:stun.l.google.com:19302"
+                ]
+            }
+        ]
+    }
 )
